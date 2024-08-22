@@ -13,8 +13,8 @@ const HowToUse = () => {
   return (
     <div className="w-full h-full ">
       <PageHeader />
-      <div className="container py-24 mx-auto">
-        <div className="items-center justify-center w-full gap-10 p-10 space-y-10 lg:flex lg:space-y-0">
+      <div className="container px-0 py-24 mx-auto">
+        <div className="items-center justify-center w-full gap-10 p-10 space-y-10 lg:flex lg:space-y-0 p-7">
           <Image
             src={"/assets/why-mockup.png"}
             width={500}

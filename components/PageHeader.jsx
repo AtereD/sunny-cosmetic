@@ -127,6 +127,9 @@ const PageHeader = () => {
                       <a href="/about">about us</a>
                     </li>
                     <li className="p-1 hover:underline">
+                      <a href="#faq">faq</a>
+                    </li>
+                    <li className="p-1 hover:underline">
                       <a href="#footer">contact us</a>
                     </li>
                   </ul>

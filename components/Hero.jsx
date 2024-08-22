@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <section className="w-full h-full py-4 bg-no-repeat lg:flex bg-hero-pattern lg:p-1 lg:py-8 lg:bg-contain">
       <div className="container w-full mx-auto">
-        <div className="items-center justify-center w-full lg:flex ">
+        <div className="flex flex-col items-center justify-center w-full gap-5 lg:flex-row">
           {/* left section*/}
 
           <div className="flex flex-col lg:w-[40%] justify-center ">
@@ -100,17 +100,17 @@ const Hero = () => {
 
           {/* right section */}
 
-          <div className="lg:w-[60%] lg:flex items-center gap-4 lg:pr-4 px-4">
+          <div className="md:w-[60%] md:flex items-center gap-4 lg:pr-4 px-4 justify-center ">
             <div>
               <Image
                 src={"/assets/mockup products.png"}
                 width={610}
                 height={561}
                 alt="product-image"
-                className="w-[610px] height-[561px] lg:w-[710px] height-[661px]"
+                className="w-[610px] lg:w-[710px] md:w-auto"
               />
             </div>
-            <div className="bg-[#fff8ef] h-[344px] lg:w-[275px] p-4 rounded-2xl">
+            <div className="bg-[#fff8ef] h-[344px] md:w-[275px] p-4 rounded-2xl">
               <p className="text-[#999999] text-[20px] leading-[24px]">
                 Details
               </p>

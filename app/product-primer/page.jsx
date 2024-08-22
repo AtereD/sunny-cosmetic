@@ -14,8 +14,8 @@ const ProductPrimer = () => {
   return (
     <div className="w-full h-full ">
       <PageHeader />
-      <div className="container py-24 mx-auto">
-        <div className="items-center justify-center w-full gap-10 p-10 space-y-10 lg:flex lg:space-y-0">
+      <div className="container px-0 py-24 mx-auto">
+        <div className="flex flex-col items-center justify-center w-full gap-10 lg:flex-row px-7">
           <Image
             src={"/assets/primer-plus.png"}
             width={400}
@@ -28,7 +28,7 @@ const ProductPrimer = () => {
             >
               GOS- Primer Plus 30 ML
             </h3>
-            <p className="text-[16px] text-[#72696a] leading-[28px] max-w-[300px]">
+            <p className="text-[16px] text-[#72696a] leading-[28px] lg:max-w-[300px]">
               GOSH COPENHAGEN offers a wide selection of products in different
               categories: Cosmetics, Fragrances, Hair Care, Face Care, Body
               Care. GOSH Cosmetics are available online.{" "}

@@ -17,7 +17,7 @@ const CTA = () => {
                     <button className='bg-[#fff] text-[#071440] text-[16px] rounded-lg px-2 py-3 hover:bg-[#071440] hover:text-white'>Get started</button>
                 </div>
                 </div>
-                <div className='absolute md:left-[80%] left-[90%] pr-2 md:pr-0'>
+                <div className='absolute md:left-[80%] left-[85%] pr-2 md:pr-0'>
                     <Image src={"/assets/cta-mockup-img.png"} width={109} height={348} alt="cta-product-image" className='w-[150px] md:w-[109px]'/>
                 </div>
                 
