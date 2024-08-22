@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <link href="/sunny-logo.png" rel="icon"/>
       </head>
       <body className={poppins.className}>
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
       </body>

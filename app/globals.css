@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 
-body {
-  @apply bg-[#fff] font-primary;
+html{
+  scroll-behavior: smooth;
 }
 
-h1 {
-  @apply text-4xl font-extrabold tracking-tighter lg:text-[5.5rem] md:text-5xl;
-}
+
