@@ -16,13 +16,13 @@ export default function Home() {
       <CartProvider>
         <Header />
         <Hero />
+        <Product />
+        <WhyChooseUs />
+        <Clients />
+        <Testimonials />
+        <FAQ />
+        <CTA />
       </CartProvider>
-      <Product />
-      <WhyChooseUs />
-      <Clients />
-      <Testimonials />
-      <FAQ />
-      <CTA />
     </main>
   );
 }

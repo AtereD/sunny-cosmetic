@@ -22,12 +22,12 @@ const StarRating = ({ rating }) => {
   return (
     <div className="flex">
       {Array.from({ length: rating[0] }).map((_, index) => (
-        <svg key={index} className="w-6 h-6 " viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg key={index} className="w-4 h-4 " viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
         </svg>
       ))}
       {Array.from({ length: rating[1] }).map((_, index) => (
-        <svg key={index} className="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg key={index} className="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
         </svg>
       ))}
@@ -59,15 +59,15 @@ const Hero = () => {
           {/* left section*/}
 
           <div className="flex flex-col lg:w-[40%] justify-center ">
-            <div className="bg-[#fcc7c3] w-[242px] h-[30px] flex  items-center rounded-full  pl-3 justify-between ">
-              <p className="text-[#524439] text-[13px] leading-[16px] pl-1">
+            <div className="bg-[#fcc7c3] md:w-[200px] h-[25px] flex  items-center rounded-full  pl-3 justify-between w-[200px]">
+              <p className="text-[#524439] text-[11px] leading-[16px] ">
                 Free delivery worldwide
               </p>
               <img
                 src="/assets/delivery-man.png"
                 alt="delivery-bike"
-                width={45}
-                height={45}
+                width={30}
+                height={30}
               />
             </div>
             <div>
@@ -110,12 +110,13 @@ const Hero = () => {
                 className="w-[610px] lg:w-[710px] md:w-auto"
               />
             </div>
-            <div className="bg-[#fff8ef] h-[344px] md:w-[275px] p-4 rounded-2xl">
-              <p className="text-[#999999] text-[20px] leading-[24px]">
+            
+            <div className="bg-[#fff8ef] h-[344px] md:w-[275px] p-4 rounded-2xl flex flex-col justify-between">
+              <p className="text-[#999999] text-[18px] leading-[24px]">
                 Details
               </p>
               <p
-                className={`text-[38px] leading-[40px] ${abhaya.className} pb-16`}
+                className={`text-[38px]  ${abhaya.className} pb-16`}
               >
                 {details[currentDetailIndex].price}
               </p>

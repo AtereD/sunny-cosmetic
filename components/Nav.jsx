@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
 import Image from "next/image";
-import { React, useState } from "react";
+import {React, useState} from "react";
 import { FaSearch, FaShoppingBasket, FaUser } from "react-icons/fa";
 import MobileNav from "./MobileNav";
 import {
@@ -12,9 +12,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useCart } from "./CartContext";
 
-const Nav = () => {
-  const { cartCount, addToCart } = useCart();
 
+const Nav = () => {
+    const { cartCount, addToCart } = useCart();
+    
   return (
     <nav className="pt-4 pb-7">
       {/* desktop nav */}
@@ -51,13 +52,12 @@ const Nav = () => {
                   {cartCount}
                 </span>
               )}
+
             </a>
           </li>
           <li>
             <DropdownMenu>
-              <DropdownMenuTrigger aria-label="User Menu">
-                <FaUser />
-              </DropdownMenuTrigger>
+              <DropdownMenuTrigger aria-label="User Menu"><FaUser/></DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>Profile</DropdownMenuItem>
                 <DropdownMenuItem>Settings</DropdownMenuItem>
@@ -68,7 +68,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile nav */}
-      <div className="lg:hidden">
+      <div className='lg:hidden'>
         <MobileNav />
       </div>
     </nav>

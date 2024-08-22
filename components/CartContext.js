@@ -1,8 +1,14 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useState, useContext } from 'react';
 
-// Create a Context for the cart
+// Create a Cart Context
 const CartContext = createContext();
 
+// Create a custom hook to use the Cart Context
+export const useCart = () => {
+  return useContext(CartContext);
+};
+
+// Create a Cart Provider component
 export const CartProvider = ({ children }) => {
   const [cartCount, setCartCount] = useState(0);
 
@@ -10,19 +16,13 @@ export const CartProvider = ({ children }) => {
     setCartCount(prevCount => prevCount + 1);
   };
 
+  const clearCart = () => {
+    setCartCount(0);
+  };
+
   return (
-    <CartContext.Provider value={{ cartCount, addToCart }}>
+    <CartContext.Provider value={{ cartCount, addToCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );
-};
-
-// Custom hook to use the Cart Context
-export const useCart = () => {
-    const context = useContext(CartContext);
-    if (context === undefined) {
-      throw new Error('useCart must be used within a CartProvider');
-    }
-  
-  return useContext(CartContext);
 };
