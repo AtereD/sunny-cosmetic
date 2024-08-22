@@ -94,7 +94,7 @@ const MobileNav = () => {
                   <a href="#products">proucts</a>
                 </li>
                 <li className="p-1 hover:underline">
-                  <a href="#faqs">faqs</a>
+                  <a href="#faq">faqs</a>
                 </li>
                 <li className="p-1 hover:underline">
                   <a href="#footer">contact us</a>
