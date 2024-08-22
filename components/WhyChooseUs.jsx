@@ -14,11 +14,11 @@ const WhyChooseUs = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between px-3 py-10">
           <div className="text-left ">
-            <p className="text-[#7d7d7d] text-[18px] tracking-[5%] font-medium italic">
+            <p className="text-[#7d7d7d] md:text-[18px] tracking-[5%] font-medium italic">
               Why Choose Us ?
             </p>
             <h3
-              className={`text-[46px] text-[#222222] leading-[50px] font-extrabold ${abhaya.className}`}
+              className={`lg:text-[46px] text-[#222222] md:leading-[50px] font-extrabold ${abhaya.className} text-[30px]`}
             >
               How to use ?<br /> learn more details.
             </h3>
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
               alt="mockup-product"
             />
           </div>
-          <div className="flex flex-col gap-3 lg:text-left max-w-[500px] -full">
+          <div className="flex flex-col gap-3 lg:text-left max-w-[500px] w-full pt-5 lg:pt-0">
             <p
               className={`text-[22px] text-[#1b1b1b] leading-[30px] ${abhaya.className} font-semibold`}
             >

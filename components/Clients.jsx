@@ -7,7 +7,7 @@ const Clients = () => {
         <div className='container p-2 mx-auto'>
             <div className='flex flex-col items-center gap-10'>
                 <h4 className='uppercase text-[#c8ced8] text-[16px] font-semibold text-center'>Some of our trusted clients</h4>
-                <div className='items-center justify-center gap-10 space-y-10 lg:space-y-0 lg:flex'>
+                <div className='flex flex-col items-center justify-center gap-10 lg:space-y-0 lg:flex-row'>
                     <Image src={"/assets/stripe.png"} alt="stripe-logo" width={96} height={46}/>
                     <Image src={"/assets/Google.png"} alt="stripe-logo" width={109} height={37}/>
                     <Image src={"/assets/Deloitte.png"} alt="stripe-logo" width={147} height={60}/>

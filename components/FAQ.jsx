@@ -15,7 +15,7 @@ const abhaya = Abhaya_Libre({
 const FAQ = () => {
   return (
     <section className="w-full h-full py-24 " id="faq">
-      <div className="container mx-auto">
+      <div className="container p-2 mx-auto ">
         <div className="text-center">
           <h3
             className={`${abhaya.className} text-[#2d1d61] text-[44px] leading-[130%] font-bold`}
@@ -23,8 +23,8 @@ const FAQ = () => {
             Frequently Asked Questions
           </h3>
         </div>
-        <div className='w-full'>
-          <Accordion type="single" collapsible className='flex flex-col gap-10 bg-[#f7f7f7] p-10 rounded-2xl'>
+        <div className='w-full lg:p-10'>
+          <Accordion type="single" collapsible className='flex flex-col md:gap-10 gap-4 bg-[#f7f7f7] p-10 rounded-2xl'>
             <AccordionItem value="item-1">
               <AccordionTrigger>How long until we deliver your product.</AccordionTrigger>
               <AccordionContent>

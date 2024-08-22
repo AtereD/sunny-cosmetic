@@ -19,11 +19,11 @@ const AccordionTrigger = React.forwardRef(({ className, children, ...props }, re
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex  items-center p-4 font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-14",
+        "flex items-center p-4 font-medium transition-all [&[data-state=open]>svg]:rotate-180 md:gap-14 gap-5 text-[14px] text-left md:text-[18px]",
         className
       )}
       {...props}>
-        <FaPlus className="w-8 h-8 duration-200 tr4ansition-transform shrink-0" />
+        <FaPlus className="w-4 h-4 duration-200 md:h-8 md:w-8 tr4ansition-transform shrink-0" />
       {children}
       
     </AccordionPrimitive.Trigger>
@@ -36,7 +36,7 @@ const AccordionContent = React.forwardRef(({ className, children, ...props }, re
     ref={ref}
     className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}>
-    <div className={cn("pb-4 pt-0 px-20", className)}>{children}</div>
+    <div className={cn("pb-4 pt-0 lg:px-20 md:px-10 px-5", className)}>{children}</div>
   </AccordionPrimitive.Content>
 ))
 

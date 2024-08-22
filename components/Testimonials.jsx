@@ -32,7 +32,7 @@ const Testimonials = () => {
   return (
     <section className='w-full h-full py-12'>
       <div className='container px-4 mx-auto'>
-        <div className='flex items-center justify-center gap-10 lg:flex-row lg:gap-20'>
+        <div className='flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-20'>
           <div className='flex-shrink-0 '>
             <Image src={testimonialsData[currentIndex].image} width={468} height={661} alt="Customer testimonial image" className='w-[100px] lg:w-[468px]' />
           </div>
