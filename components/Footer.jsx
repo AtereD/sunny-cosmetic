@@ -9,12 +9,12 @@ const Footer = () => {
         <div className='flex flex-col items-center gap-5 lg:items-start lg:w-[50%]'>
           <Image src={"/sunny-logo.png"} width={70} height={32} alt="Logo"/>
 
-          <p className='text-[18px] leadding-[32px] text-[#9a9a9a] max-w-[500px]'>Nor again is there anyone who loves or pursues or desires to obtain pain of itself.</p>
+          <p className='text-[18px] leadding-[32px] text-[#9a9a9a] max-w-[500px]'>  Look goood and beautiful using sunny products.</p>
 
-          <div className='flex gap-3'>
-            <input type='email' id='email' className='bg-black text-[#9c9c9c] pl-3 py-4 placeholder:text-[#9c9c9c] w-full border-[#bead8f] border'  placeholder='Enter your email'/>
-            <button className='text-[#bead8f] p-3'>
-              <FaArrowRight className='w-12 h-12'/>
+          <div className='flex items-center gap-3'>
+            <input type='email' id='email' className='bg-black text-[#9c9c9c] pl-3 md:py-4 placeholder:text-[#9c9c9c] w-full border-[#bead8f] border p-2'  placeholder='Enter your email'/>
+            <button className='text-[#bead8f] p-3 hover:scale-90 duration-300 ease-out'>
+              <FaArrowRight className='w-8 h-8 p-2 border md:h-12 md:w-12 '/>
             </button>
           </div>
         </div>
@@ -60,7 +60,7 @@ const Footer = () => {
       <hr className='bg-[#edebe8] mx-7 my-14'/>
 
       <div className='container mx-auto'>
-        <p className='text-[16px] text-[#9a9a9a] leading-[24%]'>&copy; Copyright 2022 sunny.com. All rights reserved</p>
+        <p className='text-[16px] text-[#9a9a9a]'>&copy; Copyright 2022 sunny.com. All right Reserved.</p>
        
       </div>
     </footer>

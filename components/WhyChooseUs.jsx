@@ -12,15 +12,15 @@ const WhyChooseUs = () => {
   return (
     <section className="w-full h-full">
       <div className="container mx-auto">
-        <div className="flex items-center justify-between px-3 py-10">
+        <div className="flex items-center justify-between py-10 md:px-3">
           <div className="text-left ">
             <p className="text-[#7d7d7d] md:text-[18px] tracking-[5%] font-medium italic">
               Why Choose Us ?
             </p>
             <h3
-              className={`lg:text-[46px] text-[#222222] md:leading-[50px] font-extrabold ${abhaya.className} text-[30px]`}
+              className={`lg:text-[46px] text-[#222222] md:leading-[50px] font-extrabold ${abhaya.className} text-[20px]`}
             >
-              How to use ?<br /> learn more details.
+              How to use ?<br className='hidden md:block'/> learn more details.
             </h3>
           </div>
           <div className="flex items-center gap-5">
@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
         </div>
-        <div className="items-center justify-center w-full lg:flex">
+        <div className="flex flex-col items-center justify-center w-full lg:flex-row">
           <div className="w-full">
             <Image
               src={"/assets/why-mockup.png"}

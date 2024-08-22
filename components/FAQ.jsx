@@ -24,7 +24,7 @@ const FAQ = () => {
           </h3>
         </div>
         <div className='w-full lg:p-10'>
-          <Accordion type="single" collapsible className='flex flex-col md:gap-10 gap-4 bg-[#f7f7f7] p-10 rounded-2xl'>
+          <Accordion type="single" collapsible className='flex flex-col md:gap-10 gap-4 bg-[#f7f7f7] md:p-10 p-5 rounded-2xl'>
             <AccordionItem value="item-1">
               <AccordionTrigger>How long until we deliver your product.</AccordionTrigger>
               <AccordionContent>
