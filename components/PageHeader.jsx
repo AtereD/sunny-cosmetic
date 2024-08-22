@@ -31,7 +31,7 @@ const PageHeader = () => {
               <a href="/">home</a>
             </li>
             <li className="p-1 hover:border-b-[1.5px] hover:border-b-black">
-              <a href="/">about us</a>
+              <a href="/about">about us</a>
             </li>
             <li className="p-1 hover:border-b-[1.5px] hover:border-b-black">
               <a href="#faq">faqs</a>
